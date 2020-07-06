@@ -70,7 +70,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: false
     }
 </script>
 
@@ -102,13 +102,6 @@
 
         
 
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -411,8 +404,8 @@
         var gitment = new Gitment({
 			  id: 'Sun Jul 05 2020 09:26:48 GMT-0400',
 			  title: 'about',
-			  owner: 'Xiang3999',
-			  repo: 'xiang3999.github.io',
+			  owner: ‘Xiang3999',
+			  repo: 'Xiang3999.github.io',
 			  oauth: {
 				client_id: 'acdb76dcea734f550dfa',
 				client_secret: 'c5650c84af06d9b892954377225462780436c65f',
@@ -478,6 +471,10 @@ setInterval("createtime()",250);
 
     </div>
     
+    
+<script src="/js/GithubRepoWidget.js"></script>
+
+
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
     <script>
@@ -530,7 +527,7 @@ MathJax.Hub.Queue(function() {
     // Open in New Window
     
         var oOpenInNew = {
-            
+             github: ".github-widget a", 
             
             
              tags: ".article-tag a", 
